@@ -1,0 +1,177 @@
+/* <------------------------------ General Structure ------------------------------> */
+#about {
+  font-family: 'Roboto', monospace;
+}
+
+#about .row {
+  padding: 50px 100px 50px;
+  box-sizing: border-box;
+}
+
+#about .col {
+  align-self: flex-start;
+}
+
+#about .header {
+  width: 40%;
+  word-spacing: 100vw;
+}
+
+#about .content {
+  width: 60%;
+}
+
+#about .header h1 {
+  font-size: 2em;
+}
+
+#about .odd h1, 
+#about .odd span {
+  color: #00CEFF;
+}
+
+#about .even h1, 
+#about .even span {
+  color: #FF85F6;
+  text-align: right;
+}
+
+#about .quick-links {
+  font-size: 13px;
+  padding-bottom: 30px;
+  margin: 0 -5px;
+}
+
+#about .quick-links a {
+  color: black;
+  margin: 0 5px;
+}
+
+#about .odd .quick-links {
+  align-self: flex-end;
+}
+
+#about .odd .quick-links a:hover {
+  border-bottom: 1px solid #FF85F6;
+}
+
+#about .even .quick-links a:hover {
+  border-bottom: 1px solid #00CEFF;
+}
+
+#about .odd .header {
+  margin-right: 20px;
+}
+
+#about .even .header {
+  margin-left: 20px;
+}
+
+#about .content > p {
+  line-height: 25px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* <------------------------------ Content Section ------------------------------> */
+.item {
+  display: flex;
+  margin: 20px 0;
+}
+
+.item-text {
+  align-self: center;
+  margin-left: 25px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.even .item-text h4 {
+  color: #00CEFF;
+}
+
+.odd .item-text h4 {
+  color: #FF85F6;
+}
+
+#about .logos {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+/* <------------------------------ Responsiveness ------------------------------> */
+@media screen and (max-width: 1160px) { 
+  #about .row {
+    padding: 50px;
+  }
+
+  #about .header h1 {
+    font-size: 1.8em;
+  }
+
+  #about .content > p {
+    font-size: 15px;
+  }  
+}
+
+@media screen and (max-width: 980px) { 
+  #about .header h1 {
+    font-size: 1.6em;
+  } 
+}
+
+@media screen and (max-width: 880px) { 
+  #about .row.odd {
+    flex-direction: column;
+  }
+
+  #about .row.even {
+    flex-direction: column-reverse;
+  }
+
+  #about .odd .quick-links {
+    align-self: flex-start;
+  }
+
+  #about .even .quick-links {
+    align-self: flex-end;
+  }
+
+  #about .header {
+    width: 100%;
+  } 
+
+  #about .header h1 {
+    font-size: 2em;
+  } 
+
+  #about .content {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  #about content > p {
+    font-size: 16px;
+  } 
+
+  #about .odd .header, #about .even .header {
+    margin: 0;
+  }
+
+  /* ITEM STYLES*/
+  .item {
+    flex-direction: column;
+  }
+
+  .item-text {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+

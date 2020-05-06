@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* <------------------------------ Reset ------------------------------> */
+body {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* <------------------------------ Navbar ------------------------------> */
+.navbar {
+  padding: 20px 50px;
+  font-family: 'Roboto', serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .active {
+  border-bottom: 1px solid #00ceff;
+  font-weight: bold;
+}
+
+.navbar .unactive:hover {
+  border-bottom: 1px solid #FF85F6;
+}
+
+.navbar h2 {
+  font-size: 36px;
+}
+
+.nav-links {
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  font-size: 18px;
+  margin-left: 50px;
+  border-bottom: 2px solid transparent;
+  color: black;
+}
+
+@media screen and (max-width: 860px) {
+  .nav-links {
+    margin: -10px 0 0 30px;
+  }
+  .nav-links a {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+}
+
+/* <------------------------------ General ------------------------------> */
+.page {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: 'Roboto', serif;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.small-top {
+  margin-top: 10px;
+}
+
+.med-top {
+  margin-top: 25px;
+}
+
+.large-top: {
+  margin-top: 50px;
+}
+
+.black {
+  color: black;
+}
+
+.blue {
+  color: #00CEFF;
+}
+
+.pink {
+  color: #FF85F6;
+}
+
+/*@media screen and (max-width: 1040px) { 
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}*/
