@@ -3,11 +3,13 @@
 /* <------------------------------ Reset ------------------------------> */
 body {
   margin: 0;
+  overflow: auto;
 }
 
 a {
   cursor: pointer;
   text-decoration: none;
+  color: black;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -17,21 +19,37 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* <------------------------------ Navbar ------------------------------> */
 .navbar {
-  padding: 20px 50px;
   font-family: 'Roboto', serif;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 50px;
+
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
+.shadow-header{
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.22);
+}
+
 .navbar .active {
-  border-bottom: 1px solid #00ceff;
-  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #00CEFF;
+  text-shadow: 1px 0px 0px black;
 }
 
 .navbar .unactive:hover {
+  padding-bottom: 5px;
   border-bottom: 1px solid #FF85F6;
+}
+
+.active-contact {
+  text-shadow: 1px 0px 0px black;
 }
 
 .navbar h2 {
@@ -39,7 +57,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav-links {
-  margin-left: 50px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -47,35 +64,178 @@ h1, h2, h3, h4, h5, h6, p {
 .nav-links a {
   font-size: 18px;
   margin-left: 50px;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   color: black;
+}
+
+@media screen and (max-width: 660px) {
+  div.contact-container, 
+  div.page {
+    top: 94px;
+  }
 }
 
 @media screen and (max-width: 860px) {
   .nav-links {
     margin: -10px 0 0 30px;
   }
+
   .nav-links a {
     margin-left: 25px;
     margin-top: 10px;
   }
 }
 
+/* <------------------------------ Contact ------------------------------> */
+.contact-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  overflow-y: scroll;
+  top: 82px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  padding-bottom: 50px;
+}
+
+.contact-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: white;
+
+  position: relative;
+  top: 50px;
+}
+
+.contact-card button {
+  border: none;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background-color: #000;
+}
+
+.contact-card .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.contact-card .info-btn {
+  display: inline-block;
+  padding: 8px;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: -1px;
+}
+
+.contact-card .title {
+  color: grey;
+  font-size: 18px;
+}
+
+.contact-card p,
+.contact-card i {
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.contact-container button:hover, 
+.a-hover a:hover {
+  opacity: 0.7;
+}
+
+.resume {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+#contact-info {
+  border-top: 1px solid black;
+}
+
+.show {
+  display: block;
+}
+
+/* <------------------------------ About / Projects  ------------------------------> */
+.item {
+  display: flex;
+  margin: 20px 0;
+}
+
+.item-text {
+  align-self: center;
+  margin-left: 25px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.even .item-text h4 {
+  color: #00CEFF;
+}
+
+.odd .item-text h4 {
+  color: #FF85F6;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+/* <------------------------------ Hobbies ------------------------------> */
+.hobby-img {
+  width: 55%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hobby-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 50px 50px;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
 /* <------------------------------ General ------------------------------> */
 .page {
   width: 100%;
-
+  position: relative;
+  top: 82px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-family: 'Roboto', serif;
 }
 
 .row {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+
+  /* Try space between */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -84,18 +244,43 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  /* margin-right: -50px; */
 }
 
-.small-top {
-  margin-top: 10px;
+/* STARTING HERE - USED BY ABOUT AND HOBBIES */
+.header {
+  width: 40%;
+  font-size: 5em;
+  word-spacing: 100vw;
 }
 
-.med-top {
-  margin-top: 25px;
+.header.odd {
+  color: #00CEFF;
+  /* margin-right: 25px; */
 }
 
-.large-top: {
-  margin-top: 50px;
+.header.even {
+  color: #FF85F6;
+  margin-left: 25px;
+  text-align: right;
+}
+
+.content {
+  width: 60%;
+}
+
+/* ENDING HERE */
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-50: {
+  margin-bottom: 50px;
 }
 
 .black {
@@ -109,10 +294,3 @@ h1, h2, h3, h4, h5, h6, p {
 .pink {
   color: #FF85F6;
 }
-
-/*@media screen and (max-width: 1040px) { 
-  .row {
-    flex-direction: column;
-    align-items: center;
-  }
-}*/

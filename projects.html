@@ -2,471 +2,200 @@
 <html>
   <head>
       <title>About - Raymond Hoong</title>
-      <link rel="stylesheet" href="style.css" type="text/css">
       <link rel="icon" href="./images/icon.ico">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="stylesheet" href="projects.css" type="text/css">
+      <link rel="Stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div style="display: flex;">
-      <div class="nav-panel">
-        <h2>hoongr</h2>
-        <a href="home.html">Home</a>
-        <a href="about.html">About</a>
+    <nav id="nav" class="navbar">
+      <h2>hoongr</h2>
+      <div class="nav-links">
+        <a href="home.html" class="unactive">Home</a>
+        <a href="about.html" class="unactive">About</a>
         <a href="projects.html" class="active">Projects</a>
-        <a href="interests.html">Interests</a>
-        <a href="contact.html">Contact</a>
+        <a href="hobbies.html" class="unactive">Hobbies</a>
+        <a id="contact-btn" class="unactive" onclick="openContact();">Contact</a>
+      </div>
+    </nav>
+
+    <div id="projects" class="page">
+
+      <div class="gallery">
+        <div class="col">
+          <div class="title">
+            <h1>InStorage</h1>
+            <a href="https://github.com/hoongr/InStorage"  target="_blank" style="margin-right: 10px;">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+          <img src="./images/projects/instorage.png">
+
+          <div class="description">
+            <li>
+              Small-business food vendor operating every Sunday at Smorgasburg LA
+            </li>
+            <li>
+              Prepped, cooked, and served food to hundreds of customers every weekend
+            </li>
+            <li>
+              Worked efficiently and cohesively in a 20-person team during hectic rushes
+            </li>           
+            <li>
+              Trained and managed new employees on the workflows of different stations
+            </li>  
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="title">
+            <h1>Billiards Game</h1>
+            <a href="https://github.com/hoongr/Billiards-Game"  target="_blank" style="margin-right: 10px;">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+          <video src="./images/projects/poolgame.mp4" type="video/mp4" controls></video>
+
+          <div class="description">
+            <li>
+              Small-business food vendor operating every Sunday at Smorgasburg LA
+            </li>
+            <li>
+              Prepped, cooked, and served food to hundreds of customers every weekend
+            </li>
+            <li>
+              Worked efficiently and cohesively in a 20-person team during hectic rushes
+            </li>           
+            <li>
+              Trained and managed new employees on the workflows of different stations
+            </li>  
+          </div>
+        </div>
       </div>
 
-      <div class="page-content">
-
-        <section id="my-story" class="content-section">
-          <div class="quick-links">
-            <a href="#work">Work</a>
-            <span>&#9679;</span>
-            <a href="#activities">Activities</a>
-            <span>&#9679;</span>
-            <a href="#education">Education</a>          
-            <span>&#9679;</span>
-            <a href="#skills">Skills</a>
+      <div class="gallery">
+        <div class="col">
+          <div class="title">
+            <h1>Tune Search</h1>
+            <a href="https://github.com/hoongr/Tune-Search"  target="_blank" style="margin-right: 10px;">
+              <i class="fa fa-github"></i>
+            </a>
           </div>
+          <img src="./images/projects/tunesearch.png">
 
-          <div class="row">
-            <img src="./images/headshot.png">
-            <div class="section-text">
-              <h1>My Story</h1>
-              <p>
-                Growing up, my family was fortunate enough to own a little restaurant in the corner of a strip mall. But as a kid, I hated it. I hated that I had to work there every summer break. I hated that I rarely got to see my parents during the day. And I really hated how exhausted and stressed it made them. 
-              </p>
-            </div>
+          <div class="description">
+            <li>
+              Small-business food vendor operating every Sunday at Smorgasburg LA
+            </li>
+            <li>
+              Prepped, cooked, and served food to hundreds of customers every weekend
+            </li>
+            <li>
+              Worked efficiently and cohesively in a 20-person team during hectic rushes
+            </li>           
+            <li>
+              Trained and managed new employees on the workflows of different stations
+            </li>  
           </div>
-
-          <div class="row">
-            <div class="section-text">
-              <p>
-                Yet, everytime I look back on those memories, I can't help but smile fondly. I can't help but remember all of the adventures I had with my siblings. Or all of the friendly regulars who made my mom smile. Or how proud my dad looked every night he locked those doors behind us.
-              </p>            
-            </div>
+        </div>
+        
+        <div class="col">
+          <div class="title">
+            <h1>Space Blaster</h1>
+            <a href="https://github.com/hoongr/SpaceBlaster"  target="_blank" style="margin-right: 10px;">
+              <i class="fa fa-github"></i>
+            </a>
           </div>
+          <img src="./images/projects/spaceblaster.png">
 
-          <div class="row">
-            <div class="section-text">
-              <p>
-                Although it's been over a decade ago since it closed, it's incredible how much of an impact that tiny restuarant still has on me. Working those hot summers has taught me the values of hard work and sacrifice. Watching my mom interact with the customers has shown me the importance of relationships and community. Seeing the pride and joy my dad felt building something that was entirely his own has inspired me to pursue a fellowship with Venture For America. 
-              </p>            
-            </div>
+          <div class="description">
+            <li>
+              Small-business food vendor operating every Sunday at Smorgasburg LA
+            </li>
+            <li>
+              Prepped, cooked, and served food to hundreds of customers every weekend
+            </li>
+            <li>
+              Worked efficiently and cohesively in a 20-person team during hectic rushes
+            </li>           
+            <li>
+              Trained and managed new employees on the workflows of different stations
+            </li>  
           </div>
-
-          <div class="row">
-            <div class="section-text">
-              <p>
-                What I wasn't able to realize as a kid back then was how much those experiences at that restaurant molded me into the person I am today. As I navigate the future looking to create something I can call mine, I'll forever be grateful for that tiny little corner we called ours.
-              </p>            
-            </div>
-          </div>
-        </section>
-
-        <section id="work" class="content-section">
-          <div class="quick-links">
-            <a href="#my-story">Story</a>
-            <span>&#9679;</span>
-            <a href="#activities">Activities</a>
-            <span>&#9679;</span>
-            <a href="#education">Education</a>          
-            <span>&#9679;</span>
-            <a href="#skills">Skills</a>
-          </div>
-
-          <div class="row" style="margin-bottom: 20px">
-            <div class="section-text">
-              <h1>Work Experience</h1>
-            </div>
-          </div>
-
-          <div class="row">
-            <img src="./images/shrimpdaddy.png">
-            <div class="section-text">
-              <div class="text-header">
-                <h3>Shrimp Daddy</h3>
-                <h4>Sep 2019 - Present</h4>
-              </div>
-              <p>
-                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <img src="./images/advencorp.png">
-            <div class="section-text">
-              <div class="text-header">
-                <h3>Adventure Corporation</h3>
-                <h4>May 2019 - Aug 2019</h4>
-              </div>
-              <p>
-                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.
-              </p>
-            </div>
-          </div>
-
-           <div class="row">
-            <img src="./images/partingpro.png">
-            <div class="section-text">
-              <div class="text-header">
-                <h3>Parting Pro</h3>
-                <h4>Sep 2018 - Dec 2018</h4>
-              </div>
-              <p>
-                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.
-              </p>
-            </div>
-          </div>
-          
-          <div class="row">
-            <img src="./images/cnsi.png">
-            <div class="section-text">
-              <div class="text-header">
-                <h3>California Nanosystems Institute</h3>
-                <h4>Jun 2016 - Sept 2019</h4>
-              </div>
-              <p>
-                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.
-              </p>
-            </div>
-          </div>                             
-        </section>
-
-        <section id="activities" class="content-section">
-          <div class="quick-links">
-            <a href="#my-story">Story</a>
-            <span>&#9679;</span>
-            <a href="#work">Work</a>
-            <span>&#9679;</span>
-            <a href="#education">Education</a>          
-            <span>&#9679;</span>
-            <a href="#skills">Skills</a>
-          </div>
-
-          <div class="row" style="margin-bottom: 20px">
-            <div class="section-text">
-              <h1>Extracurricular Activities</h1>
-            </div>
-          </div>
-
-          <div class="row">
-            <img src="./images/ost.png">
-            <div class="section-text">
-              <div class="text-header">
-                <h3>Omega Sigma Tau</h3>
-                <h4>Sep 2015 - Jun 2019</h4>
-              </div>
-              <p>
-                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.
-              </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <img src="./images/mentorseas.png">
-            <div class="section-text">
-              <div class="text-header">
-                <h3>MentorSEAS</h3>
-                <h4>Sep 2017 - Jun 2019</h4>
-              </div>
-              <p>
-                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.
-              </p>
-            </div>
-          </div>
-
-           <div class="row">
-            <img src="./images/ewb.png">
-            <div class="section-text">
-              <div class="text-header">
-                <h3>Engineers Without Borders</h3>
-                <h4>Sep 2017 - Jun 2018</h4>
-              </div>
-              <p>
-                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.
-              </p>
-            </div>
-          </div>
-          
-          <div class="row">
-            <img src="./images/lab.png">
-            <div class="section-text">
-              <div class="text-header">
-                <h3>UCLA Mechatronics and Controls Lab</h3>
-                <h4>Jun 2017 - Aug 2017</h4>
-              </div>
-              <p>
-                As you'd expect, I decided to become an engineer and subsequently pursued a mechanical engineering degree at UCLA.
-              </p>
-            </div>
-          </div>  
-        </section>
-
-        <section id="education" class="content-section">
-          <div class="quick-links">
-            <a href="#my-story">Story</a>
-            <span>&#9679;</span>
-            <a href="#work">Work</a>
-            <span>&#9679;</span>
-            <a href="#activities">Activities</a>
-            <span>&#9679;</span>
-            <a href="#skills">Skills</a>
-          </div>
-
-
-          <div class="row" style="margin-bottom: 20px">
-            <div class="section-text">
-              <h1>Educational Background</h1>
-            </div>
-          </div>          
-
-          <div class="row">
-            <img style="width: 150px; height: 150px;" src="./images/ucla.png">
-            <div class="section-text">
-              <div id="ucla" class="text-header">
-                <h3>University of California, Los Angeles</h3>
-                <h4>Sep 2015 - Mar 2020</h4>
-              </div>
-              <p>
-                <i>Bachelor of Science in <b style="color: #959898">Computer Science</b></i>
-              </p>
-              <p>
-                <b style="color: #959898">Cumulative GPA:</b> 3.3/4.0
-              </p>             
-            </div>
-          </div>  
-
-          <div class="row" style="margin-bottom: 0px">
-            <div class="section-text">
-            <h1 style="font-size: 1.6em;">Relevant Coursework</h1>
-          </div>
-          </div>
-
-          <div class="section-text">
-            <div class="row" style="margin-bottom: 5px">
-              <a href="">
-                <img src="./images/github.png">
-              </a>
-              <h3>CS M146 - Introduction to Machine Learning</h3>
-            </div>
-            <p style=" margin-bottom: 10px;">
-              &#9679; C++/C
-            </p>
-            <p>
-              I am a 2020 Computer Science graduate from UCLA, looking for opportunities in software engineering. Here on my website, you will find my academic profile and projects portfolio, as well as my activities and interests.
-            </p>          
-          </div>
-
-          <div class="section-text">
-            <div class="row" style="margin-bottom: 5px">
-              <a href="">
-                <img src="./images/github.png">
-              </a>
-              <h3>CS M146 - Introduction to Machine Learning</h3>
-            </div>
-            <p style=" margin-bottom: 10px;">
-              &#9679; C++/C
-            </p>
-            <p>
-              I am a 2020 Computer Science graduate from UCLA, looking for opportunities in software engineering. Here on my website, you will find my academic profile and projects portfolio, as well as my activities and interests.
-            </p>          
-          </div>
-
-          <div class="section-text">
-            <div class="row" style="margin-bottom: 5px">
-              <a href="">
-                <img src="./images/github.png">
-              </a>
-              <h3>CS M146 - Introduction to Machine Learning</h3>
-            </div>
-            <p style=" margin-bottom: 10px;">
-              &#9679; C++/C
-            </p>
-            <p>
-              I am a 2020 Computer Science graduate from UCLA, looking for opportunities in software engineering. Here on my website, you will find my academic profile and projects portfolio, as well as my activities and interests.
-            </p>          
-          </div>    
-
-          <div class="section-text">
-            <div class="row" style="margin-bottom: 5px">
-              <a href="">
-                <img src="./images/github.png">
-              </a>
-              <h3>CS M146 - Introduction to Machine Learning</h3>
-            </div>
-            <p style=" margin-bottom: 10px;">
-              &#9679; C++/C
-            </p>
-            <p>
-              I am a 2020 Computer Science graduate from UCLA, looking for opportunities in software engineering. Here on my website, you will find my academic profile and projects portfolio, as well as my activities and interests.
-            </p>          
-          </div>
-
-          <div class="section-text">
-            <div class="row" style="margin-bottom: 5px">
-              <a href="">
-                <img src="./images/github.png">
-              </a>
-              <h3>CS M146 - Introduction to Machine Learning</h3>
-            </div>
-            <p style=" margin-bottom: 10px;">
-              &#9679; C++/C
-            </p>
-            <p>
-              I am a 2020 Computer Science graduate from UCLA, looking for opportunities in software engineering. Here on my website, you will find my academic profile and projects portfolio, as well as my activities and interests.
-            </p>          
-          </div>
-
-          <div class="section-text">
-            <div class="row" style="margin-bottom: 5px">
-              <a href="">
-                <img src="./images/github.png">
-              </a>
-              <h3>CS M146 - Introduction to Machine Learning</h3>
-            </div>
-            <p style=" margin-bottom: 10px;">
-              &#9679; C++/C
-            </p>
-            <p>
-              I am a 2020 Computer Science graduate from UCLA, looking for opportunities in software engineering. Here on my website, you will find my academic profile and projects portfolio, as well as my activities and interests.
-            </p>          
-          </div>
-
-          <div class="section-text">
-            <div class="row" style="margin-bottom: 5px">
-              <a href="">
-                <img src="./images/github.png">
-              </a>
-              <h3>CS M146 - Introduction to Machine Learning</h3>
-            </div>
-            <p style=" margin-bottom: 10px;">
-              &#9679; C++/C
-            </p>
-            <p>
-              I am a 2020 Computer Science graduate from UCLA, looking for opportunities in software engineering. Here on my website, you will find my academic profile and projects portfolio, as well as my activities and interests.
-            </p>          
-          </div>                    
-        </section>
-
-        <section id="skills" class="content-section">
-          <div class="quick-links">
-            <a href="#my-story">Story</a>
-            <span>&#9679;</span>
-            <a href="#work">Work</a>
-            <span>&#9679;</span>
-            <a href="#activities">Activities</a>
-            <span>&#9679;</span>
-            <a href="#education">Education</a>          
-          </div>
-
-          <div class="section-text">
-            <h1>Summary of Skills</h1>
-          </div>
-
-          <div class="section-text" style="margin-bottom: 20px">
-            <h3>Programming Languages</h3>
-          </div>
-          <div class="row">
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>C++</h4>
-            </div>
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>C</h4>
-            </div>            
-          </div>
-           <div class="row">
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>Javacript</h4>
-            </div>
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>Python</h4>
-            </div>            
-          </div>         
-          <div class="row">
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>Swift</h4>
-            </div>
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>LISP</h4>
-            </div>            
-          </div> 
-
-          <div class="section-text" style="margin-top: 10px; margin-bottom: 20px">
-            <h3>Other Languages/Frameworks</h3>
-          </div>
-          <div class="row">
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>React</h4>
-            </div>
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>Bootstrap</h4>
-            </div>            
-          </div>
-           <div class="row">
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>HTML/CSS</h4>
-            </div>
-            <div class="row">
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <i class='fas fa-star'></i>
-              <h4>SQL</h4>
-            </div>            
-          </div>        
-        </section>
+        </div>
 
       </div>
+
+      <div class="gallery">
+
+        <div class="col">
+          <div class="title">
+            <h1>Cracked</h1>
+            <a href="https://github.com/hoongr/Cracked"  target="_blank" style="margin-right: 10px;">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+          <img src="./images/projects/cracked.png" type="video/mp4" controls>
+
+          <div class="description">
+            <li>
+              Small-business food vendor operating every Sunday at Smorgasburg LA
+            </li>
+            <li>
+              Prepped, cooked, and served food to hundreds of customers every weekend
+            </li>
+            <li>
+              Worked efficiently and cohesively in a 20-person team during hectic rushes
+            </li>           
+            <li>
+              Trained and managed new employees on the workflows of different stations
+            </li>  
+          </div>
+        </div>
+      </div>
+
+
 
     </div>
-    <img class="bg-image" src="./images/mountains.png">
+
+    <div id="overlay" class="contact-container" hidden>
+      <div class="contact-card a-hover">
+        <button onclick="closeContact();" class="close-btn">X</button> 
+        <img src="./images/headshot.png" style="width:100%">
+        
+        <h1>Raymond Hoong</h1>
+        <p class="title">Software Engineer</p>
+        <p>Los Angeles</p>
+
+        <a href="https://linkedin.com/in/raymondhoong"  target="_blank" style="margin-right: 10px;">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/hoongr"  target="_blank" style="margin-right: 10px;">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="./files/Match_Resume.pdf"  target="_blank">
+          <img class="resume" src="./images/business.png">
+        </a>
+        
+        <div id="contact-info" style="padding-top: 10px;" hidden>
+          <div class="row" style="justify-content: center;">
+            <i class="fa fa-envelope" style="margin-right: 8px;"></i>
+            <p>raymondhoong@gmail.com</p>
+          </div>
+          <div class="row" style="justify-content: center;">
+            <i class="fa fa-phone" style="margin-right: 8px;"></i>
+            <p>(626) 695 8820</p>
+          </div>
+        </div>  
+
+        <p style="margin-bottom: 0;">
+          <button class="info-btn" onclick="showInfo();">Contact</button>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
   </body>
 </html>

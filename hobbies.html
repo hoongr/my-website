@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Hobbies - Raymond Hoong</title>
+      <link rel="icon" href="./images/icon.ico">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  </head>
+  <body>
+    <nav id="nav" class="navbar">
+      <h2>hoongr</h2>
+      <div class="nav-links">
+        <a href="home.html" class="unactive">Home</a>
+        <a href="about.html" class="unactive">About</a>
+        <a href="projects.html" class="unactive">Projects</a>
+        <a href="hobbies.html" class="active">Hobbies</a>
+        <a id="contact-btn" class="unactive" onclick="openContact();">Contact</a>
+      </div>
+    </nav>
+
+    <div id="hobbies" class="page">
+      <div class="hobby-row">
+        <div class="header odd" style="font-size: 3vw;">
+          <h1>Marathon Running</h1>
+        </div>
+        <img class="hobby-img" src="./images/imchamps.png" > 
+      </div>
+
+      <div class="hobby-row">
+        <img class="hobby-img" src="./images/hobbies/ft.png">         
+        <div class="header even" style="font-size: 3vw;">
+          <h1>Basketball</h1>
+        </div>
+      </div>
+
+      <div class="hobby-row">
+        <div class="header odd" style="font-size: 3vw;">
+          <h1>Strength Training</h1>
+        </div>
+        <img class="hobby-img" src="./images/hobbies/deadlift.png"> 
+      </div>
+
+      <div class="hobby-row" style="margin-bottom: 50px;">
+        <img class="hobby-img" src="./images/hobbies/cooking.png">         
+        <div class="header even" style="font-size: 3vw;">
+          <h1>Cooking</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay" class="contact-container" hidden>
+      <div class="contact-card a-hover">
+        <button onclick="closeContact();" class="close-btn">X</button> 
+        <img src="./images/headshot.png" style="width:100%">
+        
+        <h1>Raymond Hoong</h1>
+        <p class="title">Software Engineer</p>       
+        <p>Los Angeles</p>
+
+        <a href="https://linkedin.com/in/raymondhoong"  target="_blank" style="margin-right: 10px;">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/hoongr"  target="_blank" style="margin-right: 10px;">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="./files/Match_Resume.pdf"  target="_blank">
+          <img class="resume" src="./images/business.png">
+        </a>
+        
+        <div id="contact-info" style="padding-top: 10px;" hidden>
+          <div class="row" style="justify-content: center;">
+            <i class="fa fa-envelope" style="margin-right: 8px;"></i>
+            <p>raymondhoong@gmail.com</p>
+          </div>
+          <div class="row" style="justify-content: center;">
+            <i class="fa fa-phone" style="margin-right: 8px;"></i>
+            <p>(626) 695 8820</p>
+          </div>
+        </div>     
+
+        <p style="margin-bottom: 0;">
+          <button class="info-btn" onclick="showInfo();">Contact</button>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>

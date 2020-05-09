@@ -6,25 +6,28 @@
       <link rel="stylesheet" href="style.css" type="text/css">
       <link rel="stylesheet" href="about.css" type="text/css">
       <link rel="Stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <nav class="navbar">
+    <nav id="nav" class="navbar">
       <h2>hoongr</h2>
       <div class="nav-links">
         <a href="home.html" class="unactive">Home</a>
         <a href="about.html" class="active">About</a>
         <a href="projects.html" class="unactive">Projects</a>
-        <a href="interests.html" class="unactive">Interests</a>
-        <a href="contact.html" class="unactive">Contact</a>
+        <a href="hobbies.html" class="unactive">Hobbies</a>
+        <a id="contact-btn" class="unactive" onclick="openContact();">Contact</a>
       </div>
     </nav>
 
-    <div id="about">
+    <div id="about" class="page">
 
       <section id="my-story" class="row odd">
-        <div class="col header odd" style="font-size: 80px;">
+
+        <div class="col header odd" style="font-size: 85px;">
           <h1>My Story<h1>
         </div>
+
         <div class="col content odd">
           <div class="quick-links">
             <a href="#work">Work</a>
@@ -35,23 +38,29 @@
             <span>&#9679;</span>
             <a href="#skills">Skills</a>    
           </div>
-          <p>
-            Growing up, my family was fortunate enough to have our own little restaurant nestled in the corner of a strip mall. But as a kid, I hated it. I hated that I had to work there every summer break. I hated that I rarely got to see my parents during the day. And I really hated how exhausted and stressed it made them. 
-          </p>
-          <p>
-            Yet, everytime I look back on those memories, I can't help but feel grateful. I'm reminded of all of the fun adventures I had with my siblings. And all of the laughter and smiles exchanged between my mom and our regulars. And I can never forgot how proud my dad looked every morning when he unlocked those two front doors.
-          </p> 
-          <p>
-            It's incredible how much of an impact that tiny restuarant had on me. Working those summers had instilled in me the values of hard work and sacrifice. Watching my mom interact with our customers had shown me the importance of relationships and community. Seeing my dad so full of pride and joy taught me the power of forging your own path and meaning.
-          </p> 
-          <p>
-            What I wasn't able to realize as a kid back then was how much those experiences molded me into the person I am today. And as I head into this next chapter with Venture for America, looking to build a purpose of my own, I'll forever cherish that tiny little corner we used to call ours.
-          </p>   
+
+          <div class="content-text">
+            <p>
+              Growing up, my family was fortunate enough to own a small restaurant in the corner of a strip mall. But as a kid, I hated it. I hated that I had to work there every summer break. I hated that I never got to see my parents during the day. And I really hated how exhausted and stressed it made them. 
+            </p>
+            <p>
+              Yet, everytime I look back on those memories, I can't help but feel grateful. I can't help but remember all of the fun adventures I had with my siblings. Or all of the laughter and smiles exchanged between my mom and our regulars. Or how proud my dad looked every morning when he unlocked those two front doors.
+            </p> 
+            <p>
+              It's incredible how much of an impact that tiny restuarant had on me. Working those summers had instilled in me the values of hard work and sacrifice. Watching my mom interact with our customers had shown me the importance of relationships and community. Seeing my dad so full of pride and joy taught me the power of forging your own path and meaning.
+            </p> 
+            <p>
+              What I wasn't able to realize as a kid back then was how much those experiences molded me into the person I am today. And as I head into this next chapter with Venture for America, looking to build a purpose of my own, I'll forever cherish that tiny little corner we used to call ours.
+            </p>   
+          </div>
+
         </div>
       </section>
 
       <section id="work" class="row even">
+
         <div class="col content even">
+
           <div class="quick-links">
             <a href="#my-story">Story</a>
             <span>&#9679;</span>
@@ -63,10 +72,10 @@
           </div>
 
           <div class="item">
-            <img class="logos" src="./images/shrimpdaddy.png">
+            <img src="./images/about/shrimpdaddy.png">
             <div class="item-text">
               <h2>Shrimp Daddy</h2>
-              <h4>Sep 2019 - May 2020</h4>
+              <h4>Sep 2019 - Present</h4>
               <div class="item-list">
                 <li>
                   Small-business food vendor operating every Sunday at Smorgasburg LA
@@ -75,7 +84,7 @@
                   Prepped, cooked, and served food to hundreds of customers every weekend
                 </li>
                 <li>
-                  Worked efficiently and cohesively in a 20-person team during hectic situations
+                  Worked efficiently and cohesively in a 20-person team during hectic rushes
                 </li>           
                 <li>
                   Trained and managed new employees on the workflows of different stations
@@ -85,10 +94,10 @@
           </div> 
 
           <div class="item">
-            <img class="logos" src="./images/advencorp.png">
+            <img src="./images/about/advencorp.png">
             <div class="item-text even">
               <h2>Adventure Corporation</h2>
-              <h4>May 2019 - Aug 2019</h4>
+              <h4>Jun 2019 - Aug 2019</h4>
               <div class="item-list">
                 <li>
                   Software developer intern at an early-stage blockchain startup 
@@ -107,7 +116,7 @@
           </div> 
 
           <div class="item">
-            <img class="logos" src="./images/partingpro.png">
+            <img src="./images/about/partingpro.png">
             <div class="item-text even">
               <h2>Parting Pro</h2>
               <h4>Sep 2018 - Dec 2018</h4>
@@ -128,7 +137,7 @@
           </div> 
 
           <div class="item">
-            <img class="logos" src="./images/cnsi.png">
+            <img src="./images/about/cnsi.png">
             <div class="item-text even">
               <h2>California Nanosystems Institute</h2>
               <h4>Jun 2016 - Sept 2019</h4>
@@ -150,7 +159,7 @@
           </div> 
 
         </div>
-        <div class="col header even" style="font-size: 65px;">
+        <div class="col header even" style="font-size: 70px;">
           <h1>Work History<h1>
         </div>
       </section>
@@ -172,7 +181,7 @@
           </div>
 
           <div class="item">
-            <img class="logos" src="./images/ost.png">
+            <img src="./images/about/ost.png">
             <div class="item-text">
               <h2>Omega Sigma Tau</h2>
               <h4>Sep 2015 - Jun 2019</h4>
@@ -194,7 +203,7 @@
           </div> 
 
           <div class="item">
-            <img class="logos" src="./images/ewb.png">
+            <img src="./images/about/ewb.png">
             <div class="item-text even">
               <h2>Engineers Without Borders</h2>
               <h4>Sep 2017 - Jun 2019</h4>
@@ -203,19 +212,19 @@
                   AutoCAD drafter for the Arizona Navajo Water Project
                 </li>
                 <li>
-                  Drafted schematics of off-grid pressurized water systems for individual families
+                  Drafted schematics of off-grid water systems for families without running water
                 </li>
                 <li>
                   Hosted workshops demonstrating the applications and tools of CAD software
                 <li>
-                  Organized and promoted on-campus events and games to celebrate Nanotechnology Day
+                  Assisted in fundraising efforts to raise money for supplies and travel expenses
                 </li>
               </div>
             </div>
           </div> 
 
           <div class="item">
-            <img class="logos" src="./images/mentorseas.png">
+            <img src="./images/about/mentorseas.png">
             <div class="item-text even">
               <h2>MentorSEAS</h2>
               <h4>Sep 2017 - Jun 2018</h4>
@@ -237,13 +246,13 @@
           </div> 
 
           <div class="item">
-            <img class="logos" src="./images/lab.png">
+            <img src="./images/about/lab.png">
             <div class="item-text even">
               <h2>Mechatronics and Controls Lab</h2>
               <h4>Jun 2017 - Aug 2017</h4>
               <div class="item-list">
                 <li>
-                  Undergraduate research assistant at a mechanical engineer lab at UCLA
+                  Undergraduate research assistant at a mechanical engineering lab at UCLA
                 </li>
                 <li>
                   Explored different methods of attaching quadcopters to surfaces for tooling ops
@@ -273,7 +282,7 @@
           </div>
 
           <div class="item">
-            <img class="logos" src="./images/ucla.png">
+            <img src="./images/about/ucla.png">
             <div class="item-text">
               <h2>University of California, Los Angeles</h2>
               <h4>Sep 2015 - Mar 2020</h4>
@@ -285,101 +294,150 @@
               </p>             
             </div>
           </div>  
-
-          <h2 style="margin: 50px 0 25px;">Relevant Coursework</h2>
-
-          <div class="item">
-            <img class="logos" src="./images/shrimpdaddy.png">
-            <div class="item-text">
-              <h2>Shrimp Daddy</h2>
-              <h4>Sep 2019 - May 2020</h4>
-              <div class="item-list">
-                <li>
-                  Small-business food vendor operating every Sunday at Smorgasburg LA
-                </li>
-                <li>
-                  Prepped, cooked, and served food to hundreds of customers every weekend
-                </li>
-                <li>
-                  Worked efficiently and cohesively in a 20-person team during hectic situations
-                </li>           
-                <li>
-                  Trained and managed new employees on the workflows of different stations
-                </li>  
-              </div>
-            </div>
-          </div> 
-
-          <div class="item">
-            <img class="logos" src="./images/advencorp.png">
-            <div class="item-text even">
-              <h2>Adventure Corporation</h2>
-              <h4>May 2019 - Aug 2019</h4>
-              <div class="item-list">
-                <li>
-                  Software developer intern at an early-stage blockchain startup 
-                </li>
-                <li>
-                  Spearheaded my own initiative that was motivated by one of my side projects
-                </li>
-                <li>
-                  Built an article-sharing web app that integrated collectible blockchain tokens
-                </li>
-                <li>
-                  Utilized tech: Javascript, React.js, Bootstrap, HTML/CSS, and AWS DynamoDB
-                </li>
-              </div>
-            </div>
-          </div> 
-
-          <div class="item">
-            <img class="logos" src="./images/partingpro.png">
-            <div class="item-text even">
-              <h2>Parting Pro</h2>
-              <h4>Sep 2018 - Dec 2018</h4>
-              <div class="item-list">
-                <li>
-                  Operations and product intern at a SaaS startup for funeral homes
-                </li>
-                <li>
-                  Trained an offshore team from the Philippines to help onboard new clients
-                <li>
-                  Drafted a comprehensive guide to streamline the training of potential new hires
-                </li>
-                <li>
-                    Worked with the CEO and CTO to discuss progress and planning of new features
-                </li>
-              </div>
-            </div>
-          </div> 
-
-          <div class="item">
-            <img class="logos" src="./images/cnsi.png">
-            <div class="item-text even">
-              <h2>California Nanosystems Institute</h2>
-              <h4>Jun 2016 - Sept 2019</h4>
-              <div class="item-list">
-                <li>
-                  Events manager assistant at a nanoscience research facility at UCLA
-                </li>
-                <li>
-                  Helped oversee the logistics of research conferences and workshops
-                </li>
-                <li>
-                  Assisted in running academic summer programs for high school students
-                </li>
-                <li>
-                  Organized and promoted events and games to celebrate Nanotechnology Day
-                </li>
-              </div>
-            </div>
-          </div> 
-
         </div>
-        <div class="col header even" style="font-size: 40px;">
+
+        <div class="col header even" style="font-size: 45px;">
           <h1>Educational Background<h1>
         </div>
       </section>
+
+
+      <section id="skills" class="row odd" style="padding-bottom: 35px;">
+        <div class="col header odd" style="font-size: 50px;">
+          <h1>Summary of Skills<h1>
+        </div>
+
+        <div class="col content odd">
+          <div class="quick-links">
+            <a href="#my-story">Story</a>
+            <span>&#9679;</span>
+            <a href="#work">Work</a>
+            <span>&#9679;</span>
+            <a href="#activities">Activities</a>          
+            <span>&#9679;</span>
+            <a href="#education">Education</a>          
+          </div>
+
+          <div class="skills-section">
+            <div class="col">
+              <h2>Programming Languages</h2>
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <h4>C++</h4>
+              </div>
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='far fa-star'></i>
+                <h4>C</h4>
+              </div>            
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <h4>Javacript</h4>
+              </div>            
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='far fa-star'></i>
+                <i class='far fa-star'></i>
+                <h4>Python</h4>
+              </div>
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='far fa-star'></i>
+                <i class='far fa-star'></i>
+                <h4>Swift</h4>
+              </div>
+            </div> 
+
+           <div class="col">
+              <h2>Other Languages</h2>
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <h4>HTML/CSS</h4>
+              </div>
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='far fa-star'></i>
+                <h4>React</h4>
+              </div>            
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='far fa-star'></i>
+                <h4>Bootstrap</h4>
+              </div>
+              <div class="skills-row">
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='fas fa-star'></i>
+                <i class='far fa-star'></i>
+                <i class='far fa-star'></i>
+                <h4>SQL</h4>
+              </div>            
+            </div> 
+          </div>           
+      </section>
+    </div>
+
+    <div id="overlay" class="contact-container" hidden>
+      <div class="contact-card a-hover">
+        <button onclick="closeContact();" class="close-btn">X</button> 
+        <img src="./images/headshot.png" style="width:100%">
+        
+        <h1>Raymond Hoong</h1>
+        <p class="title">Software Engineer</p>
+        <p>Los Angeles</p>
+
+        <a href="https://linkedin.com/in/raymondhoong"  target="_blank" style="margin-right: 10px;">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/hoongr"  target="_blank" style="margin-right: 10px;">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="./files/Match_Resume.pdf"  target="_blank">
+          <img class="resume" src="./images/business.png">
+        </a>
+        
+        <div id="contact-info" style="padding-top: 10px;" hidden>
+          <div class="row" style="justify-content: center;">
+            <i class="fa fa-envelope" style="margin-right: 8px;"></i>
+            <p>raymondhoong@gmail.com</p>
+          </div>
+          <div class="row" style="justify-content: center;">
+            <i class="fa fa-phone" style="margin-right: 8px;"></i>
+            <p>(626) 695 8820</p>
+          </div>
+        </div>  
+
+        <p style="margin-bottom: 0;">
+          <button class="info-btn" onclick="showInfo();">Contact</button>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
 
   </body>
 </html>
