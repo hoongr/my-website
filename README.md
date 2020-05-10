@@ -1,3 +1,3 @@
 # My personal website
 
-https://hoongr.github.io/my-website/projects.html
+https://hoongr.github.io/my-website/home.html
