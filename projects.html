@@ -67,7 +67,7 @@
       </div>
 
       <div class="gallery">
-        <div class="col" style="height: 550px;">
+        <div class="col">
           <div class="title">
             <h1>Billiards Game</h1>
             <a href="https://github.com/hoongr/Billiards-Game"  target="_blank" style="margin-right: 10px;">
@@ -109,7 +109,7 @@
 
       <div class="gallery">
         
-        <div class="col" style="height: 650px;">
+        <div class="col">
           <div class="title">
             <h1>Space Blaster</h1>
             <a href="https://github.com/hoongr/SpaceBlaster"  target="_blank" style="margin-right: 10px;">
@@ -120,7 +120,7 @@
           <div class="description">
             <p>
               This is a spinoff of the classic game Astro Blaster. A header file contained
-              all of the game objects that derived from a single actor base class. Each game 
+              all of the game objects that are derived from a single actor base class. Each game 
               object was implemented with different properties, such as flying speed, direction pattern,
               health, amount of damage, etc. A game world class was used to keep track of all 
               objects in the game, including the player, aliens, moving background stars, 
@@ -142,11 +142,12 @@
             <p>
               <b>Cracked</b> is a decoder for trivially encrypted messages. A tokenizer is used
               to separate each word of the message and then placed in a vector. Given a large 
-              data set of English words, we cross-referenced each encrypted word (starting with
+              data set of English words, I cross-referenced each encrypted word (starting with
               the largest) against words that followed the same pattern. The translator class is
               then updated with the pending mapping and other ensuing mappings are also pushed 
-              onto the stack. Any conflicting mappings would cause pop the current mapping off
-              the stack, and using DFS, a new correct mapping would be found and continued.
+              onto the stack. Any conflicting mappings would pop the current mapping off
+              the stack, and using DFS, a new correct mapping would be found and another
+              pathway taken.
             </p>
           </div>
         </div>
