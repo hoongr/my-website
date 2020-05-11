@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Home - Raymond Hoong</title>
+      <link rel="icon" href="./images/icon.ico">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="stylesheet" href="home.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav id="nav" class="navbar">
+      <h2>hoongr</h2>
+      <div class="nav-links">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html" class="unactive">About</a>
+        <a href="projects.html" class="unactive">Projects</a>
+        <a href="hobbies.html" class="unactive">Hobbies</a>
+        <a id="contact-btn" class="unactive" onclick="openContact();">Contact</a>
+      </div>
+    </nav>
+
+    <div id="home" class="page">
+      <div class=row>
+        <img class="background-img" src="./images/home-img.png">
+        <div class="col">
+          <div class="mb-10">
+            <h1 class="first-name">RAYMOND</h1>
+            <h1 class="second-name"> HOONG</h1>
+          </div>
+          <div class="intro a-hover">
+            <p class="mb-10">
+              I am a 2020 Computer Science graduate from UCLA looking for opportunities in software engineering. I am interested in full-stack web development and cyber security. Here on my website, you will find my academic profile and projects, as well as my passions and hobbies.
+            </p>
+            <a href="about.html" class="med-top pink">More About Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay" class="contact-container" hidden>
+      <div class="contact-card a-hover">
+        <button onclick="closeContact();" class="close-btn">X</button> 
+        <img src="./images/headshot.png" style="width:100%">
+        
+        <h1>Raymond Hoong</h1>
+        <p class="title">Software Engineer</p>  
+        <p>Los Angeles</p>
+
+        <a href="https://linkedin.com/in/raymondhoong"  target="_blank" style="margin-right: 10px;">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/hoongr"  target="_blank" style="margin-right: 10px;">
+          <i class="fa fa-github"></i>
+        </a>
+        <a href="./files/Match_Resume.pdf"  target="_blank">
+          <img class="resume" src="./images/business.png">
+        </a>
+
+        <div id="contact-info" style="padding-top: 10px;" hidden>
+          <div class="row" style="justify-content: center;">
+            <i class="fa fa-envelope" style="margin-right: 8px;"></i>
+            <p>raymondhoong@gmail.com</p>
+          </div>
+          <div class="row" style="justify-content: center;">
+            <i class="fa fa-phone" style="margin-right: 8px;"></i>
+            <p>(626) 695 8820</p>
+          </div>
+        </div>  
+
+        <p style="margin-bottom: 0;">
+          <button class="info-btn" onclick="showInfo();">Contact</button>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
