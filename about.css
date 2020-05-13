@@ -14,8 +14,8 @@
 .quick-links {
   padding: 10px;
   align-self: flex-end;
-}
   margin: 0 -5px;
+}
 
 .quick-links a {
   color: black;
