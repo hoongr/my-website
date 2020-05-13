@@ -34,11 +34,16 @@
 
           <div class="description">
             <p>
-              <b>InStorage</b> is a web application aimed at solving the storage issues of college students,
-              or what we like to say Airbnb for storage combined with Uber for moving! We used React.js to 
-              create the app, along with Firebase for our authentication and database needs. We also hooked
-              up an Express backend to deal with any interactions betwen the client and the 
-              Firebase database. We performed frontend and backend testing using Jest and Enzyme.
+              <b>InStorage</b> is a web application aimed at solving the storage issues for college students 
+              over the summer. We built an online marketplace that allowed students to connect
+              with one another with solutions to their problems. We provide three features: students to store
+              their belongings at more reasonable prices, students to rent out empty spaces in their apartments
+              for extra cash, and students to make money helping others move their items. Because of this, we like to call 
+              ourselves Airbnb for storage combined with Uber for moving!
+            </p> 
+
+            <p style="margin-top: 10px;">
+              <b>Tech stack:</b> JavaScript, React.js, HTML/CSS, Express, Firebase, Bootstrap, Jest, and Enzyme
             </p> 
           </div>
         </div>
@@ -55,13 +60,16 @@
 
           <div class="description">
             <p>
-              <b>Readible</b> is a simple article-sharing application that allows users to upload
-              and share their own articles through Google Docs. This is done by publishing 
-              your Google Doc and submitting the embedded link to the application. Firebase
-              is used to store the author's name, article title, and the embedded iframe src.
-              React Router is used to route between the different pages and articles. Users can 
-              browse through the available articles on the landing page and read more if interested.
+              <b>Readible</b> is blog-sharing application that allows users to upload
+              and share their own written blogs or articles through Google Docs. The choice of using Google 
+              Docs as the editor was to allow for the most accessibility to the users. Anyone can publish their
+              work onto the application by obtaining the embedded link of a Google Doc and submitting it along
+              with a title and author. All of the data is stored in Firebase's Realtime Database. Users can 
+              browse through the available articles on the home page and read more if interested.
             </p>
+
+            <p style="margin-top: 10px;">
+              <b>Tech stack:</b> JavaScript, React.js, HTML/CSS, Firebase, and Bootstrap
           </div>
         </div>
       </div>
@@ -78,11 +86,15 @@
 
           <div class="description">
             <p>
-              An 8-ball pool game built using Javascript and the tiny-graphics library. 
-              Javascript was used to flesh out all of the game logic and user interface
-              features. The tiny-graphics library was used to help model and render the 
-              pool table, the cue stick, and the billiard balls.
+              A two-player game rendition of the classic 8-ball pool. The game features two different camera angles: one
+              bird's eye view and another from the perspective of the cue ball. Scratches automatically ends your turn
+              and places the cue ball in the middle of the table. To strike the cue ball, you hit the spacebar and you
+              vary the amount of power used by gauging the distance between the cue stick and ball. 
             </p>
+
+            <p style="margin-top: 10px;">
+              <b>Tech stack:</b> JavaScript, HTML/CSS, WebGL, and the tiny-graphics library
+            </p> 
           </div>
         </div>
 
@@ -96,12 +108,17 @@
           <img src="./images/projects/tunesearch.png">
           <div class="description">
             <p>
-              <b>TuneSearch</b> is a simple search engine for song lyrics. Given a set of
-              songs and other information, I loaded the data into Postgres and used it to
-              query for key words typed in by the user. Each result lists the name of the
-              song and artists, ranked accordingly to its TF-IDF score. Python was used to
-              connect to the PostgreSQL instance that was running on a VM.
+              <b>TuneSearch</b> is a simple search engine for song lyrics. Users can enter a set
+              words and select either an AND or an OR query. AND means that the results must 
+              contain all of the input words, while OR means it may or may not have them. The results
+              are ranked accordingly to its TF-IDF score, which weighs a word's frequency. Each result 
+              will contain the title of the song along with its artist, and will be presented in multiples
+              of 20 on a single page.
             </p>
+
+            <p style="margin-top: 10px;">
+              <b>Tech stack:</b> HTML/CSS, Python, PostgreSQL, Nginx, Flash, and VirtualBox
+            </p> 
           </div>
         </div>
 
@@ -119,13 +136,19 @@
           <img src="./images/projects/spaceblaster.png">
           <div class="description">
             <p>
-              This is a spinoff of the classic game Astro Blaster. A header file contained
-              all of the game objects that are derived from a single actor base class. Each game 
-              object was implemented with different properties, such as flying speed, direction pattern,
-              health, amount of damage, etc. A game world class was used to keep track of all 
-              objects in the game, including the player, aliens, moving background stars, 
-              collectables, game score, and player lives.
+              <b>Space Blaster (or NachenBlaster)</b> is a spinoff of the classic game Astro Blaster. 
+              The mission is to fly your spaceship through outer space, shooting down alien spacecraft and 
+              gathering the goodies that they drop. The video game is split into three different phases:
+              initialization, game play, and cleanup. All of the game objects are derived from a single 
+              actor base class, with each object implementing its own set of properties such as flying speed, 
+              direction pattern, health, amount of damage, etc. A game world class was used to keep track of all 
+              objects in the game, including the player, aliens, moving background stars, collectables, 
+              game score, and player lives.
             </p>
+
+            <p style="margin-top: 10px;">
+              <b>Tech stack:</b> C++
+            </p> 
           </div>
         </div>
 
@@ -141,13 +164,17 @@
           <div class="description">
             <p>
               <b>Cracked</b> is a decoder for trivially encrypted messages. A tokenizer is used
-              to separate each word of the message and then placed in a vector. Given a large 
-              data set of English words, I cross-referenced each encrypted word (starting with
-              the largest) against words that followed the same pattern. The translator class is
-              then updated with the pending mapping and other ensuing mappings are also pushed 
-              onto the stack. Any conflicting mappings would pop the current mapping off
-              the stack, and using DFS, a new correct mapping would be found and another
-              pathway taken.
+              to separate each word of the message and inserted into a vector. Given a large 
+              data set of English words, each encrypted word (starting with the largest) are 
+              cross-referenced against words that follow the same pattern. For matching patterns,
+              the translator class is updated with the pending mapping and other future mappings are
+              pushed onto the stack. The decryption is built upon the DFS algorithm, so if there is a conflicting mapping,
+              the program backtracks and pops invalid mappings off the stack until another viable pathway is found. If a dead end
+              is reached, there is no possible translations and nothing is returned.
+            </p>
+
+            <p style="margin-top: 10px;">
+              <b>Tech stack:</b> C++
             </p>
           </div>
         </div>
