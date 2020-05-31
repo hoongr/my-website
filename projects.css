@@ -7,8 +7,6 @@
 
 #projects .col {
   margin: 25px 0;
-  padding: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
   align-items: center;
   border-radius: 10px;
@@ -36,6 +34,16 @@
   border: 1px solid black;
 }
 
+#projects .title a {
+  margin-left: 25px;
+  font-size: 40px;
+}
+
+#projects .description h3,
+#projects .description p  {
+  margin-bottom: 15px;
+}
+
 .gallery {
   display: flex;
   width: 100%;
@@ -46,8 +54,6 @@
   width: 400px;
   font-size: 16px;
   line-height: 30px;
-  margin-left: 25px;
-  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 1000px) { 

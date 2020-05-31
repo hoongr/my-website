@@ -27,11 +27,16 @@
 
 .second-name {
   font-size: 10vw;
-  color: #00CEFF;
+  color: #69A2B0;
 }
 
 .intro {
   line-height: 25px;
+}
+
+.about-link {
+  color: #69A2B0;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) { 

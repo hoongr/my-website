@@ -38,14 +38,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .navbar .active {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #00CEFF;
   text-shadow: 1px 0px 0px black;
 }
 
 .navbar .unactive:hover {
-  padding-bottom: 5px;
-  border-bottom: 1px solid #FF85F6;
+  opacity: 0.4;
 }
 
 .active-contact {
@@ -68,13 +65,6 @@ h1, h2, h3, h4, h5, h6, p {
   color: black;
 }
 
-@media screen and (max-width: 660px) {
-  div.contact-container, 
-  div.page {
-    top: 94px;
-  }
-}
-
 @media screen and (max-width: 860px) {
   .nav-links {
     margin: -10px 0 0 30px;
@@ -86,9 +76,16 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+@media screen and (max-width: 556px) {
+  div.contact-container, 
+  div.page {
+    top: 99px;
+  }
+}
+
 /* <------------------------------ Contact ------------------------------> */
 .contact-container {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
   overflow-y: scroll;
   top: 82px;
@@ -100,7 +97,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contact-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
   margin-bottom: 50px;
@@ -108,7 +104,8 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: white;
 
   position: relative;
-  top: 50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .contact-card button {
@@ -116,42 +113,32 @@ h1, h2, h3, h4, h5, h6, p {
   outline: 0;
   text-align: center;
   cursor: pointer;
-  color: white;
-  background-color: #000;
 }
 
-.contact-card .close-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 4;
-  font-size: 20px;
-  margin: 5px;
-}
-
-.contact-card .info-btn {
+.contact-card .btn {
   display: inline-block;
   padding: 8px;
   width: 100%;
   font-size: 18px;
-  margin-bottom: -1px;
+  margin: -1px 0;
+  color: white;
+  background-color: #000;
 }
 
 .contact-card .title {
-  color: grey;
-  font-size: 18px;
+  color: #69A2B0;
+  font-size: 20px;
+  margin: 5px 0;
 }
 
-.contact-card p,
-.contact-card i {
-  margin-bottom: 10px;
+.contact-links {
+  margin-top: 20px;
 }
 
 .contact-card a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 30px;
   color: black;
-  margin-bottom: 25px;
 }
 
 .contact-container button:hover, 
@@ -160,61 +147,25 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .resume {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   object-fit: cover;
 }
 
 #contact-info {
-  border-top: 1px solid black;
+  margin-top: 25px;
+}
+
+#contact-info .row {
+  justify-content: center;
+}
+
+#contact-info .row i {
+  margin-right: 5px;
 }
 
 .show {
   display: block;
-}
-
-/* <------------------------------ About / Projects  ------------------------------> */
-.item {
-  display: flex;
-  margin: 20px 0;
-}
-
-.item-text {
-  align-self: center;
-  margin-left: 25px;
-  line-height: 25px;
-  font-size: 15px;
-}
-
-.even .item-text h4 {
-  color: #00CEFF;
-}
-
-.odd .item-text h4 {
-  color: #FF85F6;
-}
-
-#about img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 2px solid black;
-  object-fit: cover;
-}
-
-/* <------------------------------ Hobbies ------------------------------> */
-.hobby-img {
-  height: auto;
-  object-fit: cover;
-}
-
-.hobby-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 50px 50px;
-  box-sizing: border-box;
-  width: 100vw;
 }
 
 /* <------------------------------ General ------------------------------> */
@@ -232,8 +183,6 @@ h1, h2, h3, h4, h5, h6, p {
 .row {
   width: 100%;
   display: flex;
-
-  /* Try space between */
   justify-content: space-between;
   align-items: center;
 }
@@ -243,53 +192,4 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* margin-right: -50px; */
-}
-
-/* STARTING HERE - USED BY ABOUT AND HOBBIES */
-.header {
-  width: 40%;
-  font-size: 5em;
-  word-spacing: 100vw;
-}
-
-.header.odd {
-  color: #00CEFF;
-  /* margin-right: 25px; */
-}
-
-.header.even {
-  color: #FF85F6;
-  margin-left: 25px;
-  text-align: right;
-}
-
-.content {
-  width: 60%;
-}
-
-/* ENDING HERE */
-
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-.mb-25 {
-  margin-bottom: 25px;
-}
-
-.mb-50: {
-  margin-bottom: 50px;
-}
-
-.black {
-  color: black;
-}
-
-.blue {
-  color: #00CEFF;
-}
-
-.pink {
-  color: #FF85F6;
 }

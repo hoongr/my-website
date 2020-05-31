@@ -5,6 +5,26 @@
   align-items: flex-start;
 }
 
+.header {
+  width: 40%;
+  font-size: 5em;
+}
+
+.col.header.even {
+  margin-left: 50px;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.col.header.odd {
+  margin-right: 50px;
+  text-align: left;
+}
+
+.content {
+  width: 60%;
+}
+
 .content-text p {
   line-height: 25px;
   margin-bottom: 20px;
@@ -22,27 +42,55 @@
   margin: 0 5px;
 }
 
-.odd .quick-links span {
-  color: #00CEFF;
-}
-
-.even .quick-links span {
-  color: #FF85F6;
-}
-
-.odd .quick-links a:hover {
+.quick-links a:hover {
   padding-bottom: 3px;
-  border-bottom: 1px solid #FF85F6;
-}
-
-.even .quick-links a:hover {
-  padding-bottom: 3px;
-  border-bottom: 1px solid #00CEFF;
+  border-bottom: 1px solid #468189;
 }
 
 #about section.row {
-  padding-top: 100px;
-  margin-top: -100px;
+  padding-top: 130px;
+  margin-top: -80px;
+  border-bottom: 1px solid #EDEDE8;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  object-fit: cover;
+}
+
+.item {
+  display: flex;
+  margin: 20px 0;
+}
+
+.item-text {
+  align-self: center;
+  margin-left: 25px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+#work h1, #work h4, #work .quick-links span {
+  color: #2774AE;
+}
+
+#activities h1, #activities h4, #activities .quick-links span {
+  color: #A62639;
+}
+
+#education h1, #education h4, #education .quick-links span {
+  color: #28532B;
+}
+
+#skills h1, #skills h2, #skills .quick-links span {
+  color: #71507C;
+}
+
+#skills h4 {
+  color: black;
 }
 
 /* <------------------------------ Skills ------------------------------> */
@@ -50,11 +98,11 @@
   width: 100%;
   margin-top: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .skills-section .col:first-child {
-  margin-right: 25px;
+  margin-right: 50px;
 }
 
 .skills-section h2 {
@@ -73,6 +121,10 @@
 .skills-row i {
   color: #FFB300;
   margin-right: 3px;
+}
+
+.skills-margin {
+   margin-left: 50px;
 }
 
 /* <------------------------------ Responsiveness ------------------------------> */
@@ -97,10 +149,6 @@
   .header, .content {
     width: 100%;
     margin: 0 !important;
-  }
-
-  .skills-section {
-    justify-content: flex-start;
   }
 }
 
